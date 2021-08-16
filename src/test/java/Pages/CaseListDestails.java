@@ -53,6 +53,13 @@ public void login(String User,String Pass)
 	Sb.click();
 }
 
+public void login1(String User,String Pass)
+{
+	UN.sendKeys(User);
+	PW.sendKeys(Pass);
+	Sb.click();
+}
+
 public String[] caselistHeader() 
 {
 	List<WebElement> headerName= driver.findElements(By.xpath("//th[@class='k-header k-with-icon']//following-sibling::a"));
