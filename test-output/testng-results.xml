@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-08T21:38:38 IST" name="Default suite" finished-at="2021-08-08T21:39:17 IST" duration-ms="39604">
+  <suite started-at="2021-08-18T14:42:31 IST" name="Suite" finished-at="2021-08-18T14:42:31 IST" duration-ms="37">
     <groups>
     </groups>
-    <test started-at="2021-08-08T21:38:38 IST" name="Default test" finished-at="2021-08-08T21:39:17 IST" duration-ms="39604">
-      <class name="Utils.BasicFunctions">
-        <test-method signature="screeShot()[pri:0, instance:Utils.BasicFunctions@41fecb8b]" started-at="2021-08-08T21:38:38 IST" name="screeShot" finished-at="2021-08-08T21:39:17 IST" duration-ms="39541" status="PASS">
+    <test started-at="2021-08-18T14:42:31 IST" name="Test" finished-at="2021-08-18T14:42:31 IST" duration-ms="37">
+      <class name="TestCases.LoginPage">
+        <test-method signature="login()[pri:0, instance:TestCases.LoginPage@be35cd9]" started-at="2021-08-18T14:42:31 IST" name="login" finished-at="2021-08-18T14:42:31 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screeShot -->
-      </class> <!-- Utils.BasicFunctions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+      </class> <!-- TestCases.LoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
