@@ -17,6 +17,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -34,7 +35,6 @@ public class Base {
 	static XSSFCell xcol;
 	static FileInputStream fis;
 	static String XcellPath;
-	static Actions act =act=new Actions(driver);
 	static Select dropdown;
 	static Properties pro;
 	
@@ -48,13 +48,13 @@ public class Base {
 	}
 	public static void dragandDrop(WebElement drop,WebElement drag)  
 	{
-		
+		Actions act =act=new Actions(driver);
 		act.dragAndDrop(drop, drag).build().perform();
 	}
 	
 	public static void doubleClick(WebElement element)  
 	{
-		
+		Actions act =act=new Actions(driver);
 		act.doubleClick(element);
 	}
 	public static void dropdown(WebElement element,String value)  
@@ -62,7 +62,7 @@ public class Base {
 	dropdown= new Select(element);
 	dropdown.selectByValue(value);
 	}
-		
+	
 		
 	
 	public static void alertAccept()

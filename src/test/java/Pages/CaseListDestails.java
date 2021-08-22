@@ -2,6 +2,7 @@ package Pages;
 
 
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,15 +16,13 @@ import Utils.Base;
 import Utils.PropertyGet;
 
 public class CaseListDestails extends Base{
-	 WebDriver driver;
+	WebDriver driver;
 
 	
-public CaseListDestails(WebDriver driver) 
+public CaseListDestails(WebDriver idriver)
 {
-		
+	 this.driver = idriver;
 	PageFactory.initElements(driver, this);
-	this.driver=driver;
-	
 }
 
 @FindBy(how=How.ID,using="Username") WebElement UN;
@@ -46,10 +45,11 @@ public  void errorpage()
 	
 	
 }
-public void login(String User,String Pass)
+public void login() throws IOException
 {
-	UN.sendKeys(User);
-	PW.sendKeys(Pass);
+	PropertyGet.propertydata();
+	UN.sendKeys(PropertyGet.UN());
+	PW.sendKeys(PropertyGet.PW());
 	Sb.click();
 }
 
